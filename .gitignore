@@ -1,0 +1,11 @@
+# 影音素材與輸出不進 git
+input/*
+output/*
+!input/.gitkeep
+!output/.gitkeep
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.mp3
+__pycache__/

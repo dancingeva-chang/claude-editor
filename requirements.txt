@@ -1,0 +1,5 @@
+moviepy
+pydub
+auto-editor
+faster-whisper
+opencc-python-reimplemented
