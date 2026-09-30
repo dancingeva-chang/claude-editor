@@ -20,6 +20,14 @@
 | mediainfo | 查看影片資訊 |
 | Noto CJK 字型 | 燒錄中文字幕 |
 
+## 自動化工作流
+
+完整設計（工作 + 個人、排程與導入步驟）見 [`docs/automation-workflow.md`](docs/automation-workflow.md)。
+
+- **剪片流水線**：素材放進 `input/`，執行 `python3 scripts/pipeline.py`（或在 Claude Code 輸入 `/process-footage`），自動剪靜音、音量標準化、上字幕、做封面，成品在 `output/<片名>/`，總表在 `output/REPORT.md`。
+- **Routine 提示詞**：晨報、週報、會議整理、財務檢查、每週回顧，放在 `workflows/routines/`。
+- **每週回顧**：在 Claude Code 輸入 `/weekly-review`。
+
 ## 資料夾
 
 - `input/`：放原始素材
